@@ -481,3 +481,109 @@ main {
     margin: 20px 0px;
 }
 
+.leasing-btn button:active { 
+    background-color: #2a8f3f;
+}
+
+.leasing-important-information {
+    color: #4F4F4F;
+    font-size: 18px;
+    margin: 50px 0;
+    margin-left: 10px;
+    letter-spacing: .5px;
+}
+
+.our-partners-wrapper {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.our-partners-title {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: #313131;
+    font-weight: bold;
+    text-align: center;
+}
+
+.our-partners-icon {
+    margin-left: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.our-partners-information {
+    margin: 0 10px;
+    width: 95%;
+    letter-spacing: .4px;
+    line-height: 23px;
+    font-size: 18px;
+    color: #313131;
+    margin-bottom: 70px;
+}
+
+.our-partners-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 50px;
+    width: 90%;
+}
+
+.our-partners-logos img {
+    width: 100%;
+}
+
+.our-partners-logos img:last-child {
+    width: 44%;
+    position: relative;
+    bottom: 12px;
+}
+
+.our-partners-btn button {
+    background-color: rgb(72, 183, 96);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(72, 183, 96);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.our-partners-btn button:active { 
+    background-color: #2a8f3f;
+}
+
+.give-a-message-wrapper {
+    max-width: 1366px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.give-a-message-title {
+    font-size: 80px;
+    font-weight: bold;
+    color: #313131;
+    text-align: center;
+}
+
+.give-a-message-icon {
+    margin-left: 40px;
+}
+
+.give-a-message-form-and-map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+form {
+    margin-left: 40px;
+}

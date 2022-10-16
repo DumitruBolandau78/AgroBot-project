@@ -36,12 +36,18 @@ a {
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 253, 255);
+    width: 100%;
+}
+
+.header-inner {
     max-width: 1366px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     align-items: center;
-    background-color: rgb(247, 253, 255);
 }
 
 header img {
@@ -450,6 +456,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
     grid-gap: 20px;
+    margin-right: 10px;
 }
 
 .leasing-information-rules-title {
@@ -530,20 +537,18 @@ main {
 
 .our-partners-logos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     width: 90%;
 }
 
-.our-partners-logos img {
-    width: 100%;
+.our-partners-logos img:last-child {
+    position: relative;
+    bottom: 17px;
 }
 
-.our-partners-logos img:last-child {
-    width: 44%;
-    position: relative;
-    bottom: 12px;
+.our-partners-logos img {
+    width: 100%;
 }
 
 .our-partners-btn button {
@@ -647,8 +652,7 @@ textarea:focus {
 }
 
 .give-a-message-logo {
-    display: flex;
-    justify-content: flex-end;
+    float: right;
     margin-right: 40px;
     position: relative;
     bottom: 60px;
@@ -715,6 +719,10 @@ footer {
     transition: .5s ease-in-out;
 }
 
+.footer-social-media-icons i:hover{
+    color:#48B760;
+}
+
 .footer-rights {
     display: flex;
     max-width: 1366px;
@@ -734,4 +742,39 @@ footer {
 .footer-rights-text div {
     color: white;
     font-weight: bold;
+}
+
+.panel {
+    position: fixed;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    float: right;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4F4F4F;
+    height: 70vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100px;
+    transition: .5s ease-in-out;
+    transform: translateX(-85%);
+}
+
+nav:hover {
+    transform: translateX(-50%);
+}
+
+nav input {
+    margin: 13px 2px;
+    height: 20px;
+    width: 100%;
+    position: relative;
+    left: 20px;
+    accent-color: #48B760;
 }

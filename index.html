@@ -13,19 +13,21 @@
 </head>
 <body>
     <div class="box">
-        <header>
-            <img src="./images/logo/logo-removebg-preview (1).png" alt="logo">
-            <menu>
-                <ul>
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Товары и Услуги</a></li>
-                    <li><a href="">Как с нами работать?</a></li>
-                    <li><a href="">Партнеры</a></li>
-                    <li><a href="">Кредитование</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </menu>
-            <a class="header-number" href="tel:+79999999999">+7 (999) 999-99-99</a>
+        <header id="header">
+            <div class="header-inner">
+                <img src="./images/logo/logo-removebg-preview (1).png" alt="logo">
+                <menu>
+                    <ul>
+                        <li><a href="#header">Главная</a></li>
+                        <li><a href="#products-and-offers">Товары и Услуги</a></li>
+                        <li><a href="#how-to-work-with-us">Как с нами работать?</a></li>
+                        <li><a href="#lending">Кредитование</a></li>
+                        <li><a href="#our-partners">Партнеры</a></li>
+                        <li><a href="#give-a-message">Контакты</a></li>
+                    </ul>
+                </menu>
+                <a class="header-number" href="tel:+79999999999">+7 (999) 999-99-99</a>
+            </div>
         </header>
         <main>
             <article class="main-page">
@@ -81,7 +83,7 @@
                     </div>
                 </div>
             </article>
-            <article class="products-and-offers-wrapper">
+            <article class="products-and-offers-wrapper" id="products-and-offers">
                 <div class="products-and-offers-title">
                     Товары и услуги
                 </div>
@@ -150,7 +152,7 @@
                     </div>
                 </div>
             </article>
-            <article class="how-to-work-with-us-wrapper">
+            <article class="how-to-work-with-us-wrapper" id="how-to-work-with-us">
                 <div class="how-to-work-with-us-title">
                     Как с нами работать
                 </div>
@@ -234,7 +236,7 @@
                     <button>Свяжитесь с нами</button>
                 </div>
             </article>
-            <article class="lending-wrapper">
+            <article class="lending-wrapper"  id="lending">
                 <div class="lending-title-and-banks-logo">
                     <div class="lending-title">
                         Кредитование
@@ -313,7 +315,7 @@
                 </div>
             </article>
             <div class="our-partners-wrapper">
-                <div class="our-partners-title">
+                <div class="our-partners-title" id="our-partners">
                     Наши партнеры
                 </div>
                 <div class="our-partners-icon">
@@ -323,20 +325,14 @@
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </div>
                 <div class="our-partners-logos">
-                    <img src="./images/our-partners/22c437619039d1361fd610ae4b6cf4b5.png" alt="">
-                    <img src="./images/our-partners/32a079a97cfd9095371928e0f327955c.png" alt="">
-                    <img src="./images/our-partners/3391e738621996db3c82585bf48b150c.png" alt="">
-                    <img src="./images/our-partners/38eb6442a8a3f957529d9cce4e78d494.png" alt="">
-                    <img src="./images/our-partners/70f7c688e2beab8801dbbf7dabfd0ac7.png" alt="">
-                    <img src="./images/our-partners/7475cdce69d0cab59285d779707dd312.png" alt="">
-                    <img src="./images/our-partners/7eb5bfa1d9e5180e0dfbebcaa691e421.png" alt="">
-                    <img src="./images/our-partners/8f10f6e975d710037643c15c45186679.png" alt="">
+                    <img src="./images/our-partners/our-partners1.png" alt="">
+                    <img src="./images/our-partners/our-partners2.png" alt="">
                 </div>
                 <div class="our-partners-btn">
                     <button>Свяжитесь с нами</button>
                 </div>
             </div>
-            <article class="give-a-message-wrapper">
+            <article class="give-a-message-wrapper" id="give-a-message">
                 <div class="give-a-message-title">
                     Обратная связь
                 </div>
@@ -388,16 +384,16 @@
                     </div>
                     <div class="footer-social-media-icons">
                         <div class="footer-social-media-icon-facebook">
-                            <a href="https://web.facebook.com/dima.bolandau.1/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://web.facebook.com/dima.bolandau.1/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                         </div>
                         <div class="footer-social-media-icon-instagram">
-                            <a href="https://www.instagram.com/dima.bolandau78/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/dima.bolandau78/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                         <div class="footer-social-media-icon-twitter">
-                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                         </div>
                         <div class="footer-social-media-icon-youtube">
-                            <a href="https://www.youtube.com/channel/UCTP1PGV-piW-tsUYXlHmvGw"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/channel/UCTP1PGV-piW-tsUYXlHmvGw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -409,6 +405,16 @@
                 </div>
             </div>
         </footer>
+        <div class="panel">
+            <nav>
+                <input onClick="window.location = '#header';" type="radio" name="panel-hover">
+                <input onClick="window.location = '#products-and-offers';" type="radio" name="panel-hover">
+                <input onClick="window.location = '#how-to-work-with-us';" type="radio" name="panel-hover">
+                <input onClick="window.location = '#lending';" type="radio" name="panel-hover">
+                <input onClick="window.location = '#our-partners';" type="radio" name="panel-hover">
+                <input onClick="window.location = '#give-a-message';" type="radio" name="panel-hover">
+            </nav>
+        </div>
     </div>
 </body>
 </html>

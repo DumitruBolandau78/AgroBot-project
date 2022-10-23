@@ -825,3 +825,7 @@ nav input {
     left: 20px;
     accent-color: #48B760;
 }
+
+aside {
+    display: none;
+}

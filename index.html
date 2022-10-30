@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./images/icon/logo-removebg-preview.png">
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="./css/media/media-querie.css">
+    <script src="./js/index.js"></script>
 
     <script src="https://kit.fontawesome.com/f3510151c9.js" crossorigin="anonymous"></script>
 </head>
@@ -43,7 +44,7 @@
                         Мы создали удобный и бесплатный инструмент<br> поиска выгодных предложений на товары для<br> нужд вашего сельхозпредприятия
                     </div>
                     <div class="main-page-left-side-btn">
-                        <button>Свяжитесь с нами</button>
+                        <button onclick="window.location = '#give-a-message'">Свяжитесь с нами</button>
                     </div>
                     <div class="main-page-left-side-suggestion">
                         <div class="main-page-left-side-suggestion-image">
@@ -234,7 +235,7 @@
                     </div>
                 </section>
                 <div class="how-to-work-with-us-btn">
-                    <button>Свяжитесь с нами</button>
+                    <button onclick="window.location = '#give-a-message'">Свяжитесь с нами</button>
                 </div>
             </section>
             <section class="lending-wrapper"  id="lending">
@@ -330,7 +331,7 @@
                     <img src="./images/our-partners/our-partners2.png" alt="">
                 </div>
                 <div class="our-partners-btn">
-                    <button>Свяжитесь с нами</button>
+                    <button onclick="window.location = '#give-a-message'">Свяжитесь с нами</button>
                 </div>
             </section>>
             <section class="give-a-message-wrapper" id="give-a-message">
@@ -417,10 +418,10 @@
             </nav>
         </div>
         <aside>
-            <label for="toggle"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" name="toggle" id="toggle">
-            <div class="aside-menu">
-                <a href="#header">Главная</a></li>
+            <label id="aside-menu-open" onclick="menuOpen()"><i class="fa-solid fa-bars"></i></label>
+            <label id="aside-menu-close" onclick="menuClose()"><i class="fa-solid fa-xmark"></i></label>
+            <div class="aside-menu" id="aside-menu">
+                <a href="#header">Главная</a>
                 <a href="#products-and-offers">Товары и Услуги</a>
                 <a href="#how-to-work-with-us">Как с нами работать?</a>
                 <a href="#lending">Кредитование</a>

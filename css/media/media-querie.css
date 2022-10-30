@@ -14,34 +14,42 @@
         display: none;
     }
 
+    .fa-bars {
+        color: #48B760;
+    }
+
+
+
     aside {
-        display: block;
+        display: flex;
         position: fixed;
         z-index: 1;
-        top: 10px;
-        left: 10px;
+        top: 0;
+        left: 0;
     }
 
-    #toggle {
-        display: none;
-    }
-
-    label i{
+    aside label {
         font-size: clamp(40px, 5vw, 50px);
         color: #313131;
-        position: relative;
+        position: fixed;
+        top: 10px;
+        left: 10px;
         z-index: 3;
     }
 
+    #aside-menu-close {
+        display: none;
+    }
+
     .aside-menu {
-        width: calc(100% + 10px);
+        width: 100%;
         max-width: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: fixed;
-        left: calc(-100% - 10px);
+        left: -100%;
         top: 0;
         z-index: 2;
         height: 70vh;
@@ -56,13 +64,11 @@
         font-size: 22px;
     }
 
-    .aside-menu i {
+    .btn-close {
         font-size: clamp(40px, 5vw, 50px);
-        color: white;
-    }
-
-    #toggle:checked ~ .aside-menu {
-        left: -10px;
+        color: #313131;
+        position: relative;
+        z-index: 3;
     }
 }
 

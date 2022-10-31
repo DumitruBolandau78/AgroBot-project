@@ -839,7 +839,7 @@ aside {
     align-items: center;
     justify-content: center;
     padding: 20px;
-
+    display: none;
 }
 
 .modal-inner-page {
@@ -862,6 +862,10 @@ aside {
 .modal-title-and-btn-for-closing-the-modal {
     display: flex;
     justify-content: space-between;
+}
+
+.modal-btn-for-closing-the-modal i {
+    font-size: 25px;
 }
 
 .modal-title {

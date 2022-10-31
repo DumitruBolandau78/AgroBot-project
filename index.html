@@ -107,7 +107,7 @@
                             (Разъяснительная строка)
                         </div>
                         <div class="products-and-offers-item-btn">
-                            <button>Создать запрос</button>
+                            <button onclick="product1()">Создать запрос</button>
                         </div>
                     </div>
                     <div class="products-and-offers-item">
@@ -121,7 +121,7 @@
                             (Разъяснительная строка)
                         </div>
                         <div class="products-and-offers-item-btn">
-                            <button>Создать запрос</button>
+                            <button onclick="product2()">Создать запрос</button>
                         </div>
                     </div>
                     <div class="products-and-offers-item">
@@ -135,7 +135,7 @@
                             (Разъяснительная строка)
                         </div>
                         <div class="products-and-offers-item-btn">
-                            <button>Создать запрос</button>
+                            <button onclick="product3()">Создать запрос</button>
                         </div>
                     </div>
                     <div class="products-and-offers-item">
@@ -149,7 +149,7 @@
                             (Разъяснительная строка)
                         </div>
                         <div class="products-and-offers-item-btn">
-                            <button>Создать запрос</button>
+                            <button onclick="product4()">Создать запрос</button>
                         </div>
                     </div>
                 </div>
@@ -429,14 +429,14 @@
                 <a href="#give-a-message">Контакты</a>
             </div>
         </aside>
-        <div class="modal">
+        <div class="modal" id="modal">
             <div class="modal-inner-page">
                 <div class="modal-inner-wrapper">
                     <div class="modal-title-and-btn-for-closing-the-modal">
-                        <div class="modal-title">
-                            СЗР
+                        <div class="modal-title" id="modal-title">
+                            Семена
                         </div>
-                        <div class="modal-btn-for-closing-the-modal">
+                        <div class="modal-btn-for-closing-the-modal" onclick="closeModal()">
                             <i class="fa-solid fa-xmark"></i>
                         </div>
                     </div>
@@ -448,10 +448,10 @@
                             Товар:
                         </div>
                         <select name="product" id="product">
-                            <option value="Семена">Семена</option>
-                            <option value="СЗР">СЗР</option>
-                            <option value="Удобрения">Удобрения</option>
-                            <option value="Техника">Техника</option>
+                            <option id='option1' selected value="Семена">Семена</option>
+                            <option id='option2' value="СЗР">СЗР</option>
+                            <option id='option3' value="Удобрения">Удобрения</option>
+                            <option id='option4' value="Техника">Техника</option>
                         </select>
                         <div class="modal-body-culture-title title">
                             Культура:

@@ -1,3 +1,5 @@
+
+
 function menuOpen() {
     document.getElementById('aside-menu').style.left = '0';
     document.getElementById('aside-menu-open').style.display = 'none';
@@ -40,5 +42,15 @@ function product4() {
 
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+    document.getElementById('body').style.overflowY = 'auto';
+}
+
+function openModalCredit() {
+    document.getElementById('modal-credit').style.display = 'flex';
+    document.getElementById('body').style.overflowY = 'hidden';
+}
+
+function closeModalCredit() {
+    document.getElementById('modal-credit').style.display = 'none';
     document.getElementById('body').style.overflowY = 'auto';
 }

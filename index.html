@@ -313,7 +313,7 @@
                     * При рассмотрении проекта возможны индивидуальные условия
                 </div>
                 <div class="leasing-btn">
-                    <button>Оставить заявку</button>
+                    <button onclick="openModalCredit()">Оставить заявку</button>
                 </div>
             </section>
             <section class="our-partners-wrapper">
@@ -505,6 +505,50 @@
                     </div>
                     <div class="modal-btn-and-call">
                         <div class="modal-btn">
+                            <button type="submit">Отправить</button>
+                        </div>
+                        <div class="modal-call">
+                            <a href="tel:+79999999999">Позвонить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-credit" id="modal-credit">
+            <div class="modal-credit-inner">
+                <div class="modal-credit-wrapper">
+                    <div class="modal-credit-title-and-close-btn">
+                        <div class="modal-title" id="modal-title">
+                            Кредит
+                        </div>
+                        <div class="modal-credit-btn-for-closing-the-modal" onclick="closeModalCredit()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="modal-credit-body">
+                        <div class="modal-credit-body-name title">
+                            Имя:
+                        </div>
+                        <input type="text" name="name" id="name">
+                        <div class="modal-credit-body-phone-number title">
+                            Номер телефона:
+                        </div>
+                        <input type="number" id="modal-credit-phone-number">
+                        <div class="modal-credit-body-email title">
+                            E-mail:
+                        </div>
+                        <input type="email" id="modal-credit-email">
+                        <div class="modal-credit-body-money-credit title">
+                            Количество денег в $:
+                        </div>
+                        <input type="number" name="modal-credit-money" id="modal-credit-money">
+                        <div class="modal-credit-body-reason-of-credit title">
+                            Причина кредита:
+                        </div>
+                        <textarea name="reason-of-credit" id="reason-of-credit" cols="30" rows="10" maxlength="250"></textarea>
+                    </div>
+                    <div class="modal-credit-btn-and-call">
+                        <div class="modal-credit-btn">
                             <button type="submit">Отправить</button>
                         </div>
                         <div class="modal-call">

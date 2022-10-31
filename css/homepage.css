@@ -849,7 +849,6 @@ aside {
     justify-content: center;
     width: 100%;
     max-width: 500px;
-    height: 90vh;
     max-height: 550px;
 }
 
@@ -927,4 +926,89 @@ aside {
 
 .title {
     white-space: nowrap;
+}
+
+.modal-credit {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display: none;
+}
+
+.modal-credit-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    max-height: 550px;
+}
+
+.modal-credit-wrapper {
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-credit-title-and-close-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-credit-title-and-close-btn i {
+    font-size: 25px;
+}
+
+#modal-credit-money::-webkit-outer-spin-button, #modal-credit-money::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.modal-credit-body input {
+    border-radius: 0;
+    font-size: 100%;
+    padding: 2px 5px;
+    outline: none;
+    border-bottom: 1px solid #313131;
+}
+
+.modal-credit-body textarea {
+    border-radius: 0;
+    font-size: 100%;
+    padding: 5px;
+    outline: none;
+    border-bottom: 1px solid #313131;
+}
+
+.modal-credit-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: auto;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-credit-btn-and-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.modal-credit-btn button{
+    background-color: #48B760;
+    color: #fff;
+    padding: 5px 15px;
+    border: 1px solid #48B760;
+    border-radius: 15px;
+}
+
+.modal-credit-btn button:active {
+    background-color: #2a8f3f;
 }

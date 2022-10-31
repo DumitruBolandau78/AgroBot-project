@@ -789,6 +789,7 @@ footer {
 .footer-rights-text div {
     color: white;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .panel {

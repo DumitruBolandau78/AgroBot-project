@@ -14,26 +14,31 @@ function product1() {
     document.getElementById('modal').style.display = 'flex';
     document.getElementById('option1').selected = 'selected';
     document.getElementById('modal-title').innerHTML = 'Семена';
+    document.getElementById('body').style.overflowY = 'hidden';
 }
 
 function product2() {
     document.getElementById('modal').style.display = 'flex';
     document.getElementById('option2').selected = 'selected';
     document.getElementById('modal-title').innerHTML = 'СЗР';
+    document.getElementById('body').style.overflowY = 'hidden';
 }
 
 function product3() {
     document.getElementById('modal').style.display = 'flex';
     document.getElementById('option3').selected = 'selected';
     document.getElementById('modal-title').innerHTML = 'Удобрения';
+    document.getElementById('body').style.overflowY = 'hidden';
 }
 
 function product4() {
     document.getElementById('modal').style.display = 'flex';
     document.getElementById('option4').selected = 'selected';
     document.getElementById('modal-title').innerHTML = 'Техника';
+    document.getElementById('body').style.overflowY = 'hidden';
 }
 
 function closeModal() {
-    document.getElementById('modal').style.display = 'none'
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('body').style.overflowY = 'auto';
 }

@@ -802,9 +802,11 @@ footer {
 }
 
 nav {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: right;
     background-color: #4F4F4F;
     height: 70vh;
     border-top-right-radius: 20px;

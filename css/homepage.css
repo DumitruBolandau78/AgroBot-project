@@ -5,6 +5,8 @@ html {
 
 body {
     margin: 0;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
 * {
@@ -96,7 +98,7 @@ header img {
 main {
     max-width: 1366px;
     width: 100%;
-    scroll-behavior: smooth;
+    background-color: #fff;
 }
 
 .main-page {
@@ -843,12 +845,10 @@ aside {
     justify-content: center;
     padding: 20px;
     display: none;
+    overflow: scroll;
 }
 
 .modal-inner-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     max-width: 500px;
     max-height: 550px;
@@ -941,12 +941,10 @@ aside {
     justify-content: center;
     padding: 20px;
     display: none;
+    overflow: scroll;
 }
 
 .modal-credit-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     max-width: 500px;
     max-height: 550px;

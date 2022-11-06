@@ -354,6 +354,34 @@
     }
 }
 
+@media (max-width: 406px) {
+    .modal-credit-body {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .modal-credit-body .title {
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 390px) {
+    .modal-body {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .modal-body .title {
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+
+    .title br {
+        display: none;
+    }
+}
+
 @media (max-width: 374px) { 
     .lending-icon {
         display: none;
